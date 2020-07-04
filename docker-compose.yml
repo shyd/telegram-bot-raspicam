@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  photo-frame:
+    image: shyd/telegram-bot-raspicam
+    env_file:
+      - raspicam.env
+    privileged: true
+    restart: unless-stopped

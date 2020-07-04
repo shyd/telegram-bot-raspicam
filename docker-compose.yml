@@ -3,7 +3,12 @@ version: '3'
 services:
   raspicam:
     image: shyd/telegram-bot-raspicam
+    volumes:
+      - /opt/vc:/opt/vc
+    devices:
+      - "/dev/vchiq:/dev/vchiq"
+    environment:
+      - LD_LIBRARY_PATH=/opt/vc/lib
     env_file:
       - raspicam.env
-    privileged: true
     restart: unless-stopped

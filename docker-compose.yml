@@ -5,6 +5,7 @@ services:
     image: shyd/telegram-bot-raspicam
     volumes:
       - /opt/vc:/opt/vc
+      - ./photos:/usr/src/app/photos
     devices:
       - "/dev/vchiq:/dev/vchiq"
     environment:

@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  photo-frame:
+  raspicam:
     image: shyd/telegram-bot-raspicam
     env_file:
       - raspicam.env

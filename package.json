@@ -1,0 +1,28 @@
+{
+  "name": "telegram-bot-raspicam",
+  "version": "1.0.0",
+  "description": "simple telegram bot sending raspistill pictures",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shyd/telegram-bot-raspicam.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "raspistill"
+  ],
+  "author": "Dennis Schuett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shyd/telegram-bot-raspicam/issues"
+  },
+  "homepage": "https://github.com/shyd/telegram-bot-raspicam#readme",
+  "dependencies": {
+    "node-raspistill": "^1.0.1",
+    "telegraf": "^3.38.0"
+  }
+}

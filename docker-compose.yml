@@ -6,6 +6,7 @@ services:
     volumes:
       - /opt/vc:/opt/vc
       - ./photos:/usr/src/app/photos
+      - ./videos:/usr/src/app/videos
     devices:
       - "/dev/vchiq:/dev/vchiq"
     environment:

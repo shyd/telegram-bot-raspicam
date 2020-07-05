@@ -30,7 +30,7 @@ bot.command('pic', (ctx) => {
 })
 bot.command('vid', (ctx) => {
     const now = Math.floor(Date.now() / 1000);
-    raspivid.record(now, 10000)
+    raspivid.record(''+now, 10000)
         .then(() => {
             console.log('record done!');
             ctx.replyWithVideo({ source: './videos/'+now+'.mp4' })

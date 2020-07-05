@@ -7,7 +7,7 @@ const camera = new Raspistill({
     verticalFlip: true,
     horizontalFlip: true
 });
-const Raspivid = require('node-raspivideo');
+const Raspivid = require('node-raspivideo').Raspivid;
 const raspivid = new Raspivid({
     videoFolder: './videos',
     verticalFlip: true,

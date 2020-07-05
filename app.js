@@ -37,7 +37,8 @@ bot.command('vid', (ctx) => {
         })
         .catch((err) => {
             console.error(err);
-            ctx.reply('sorry, could not record video!')
+            ctx.reply('sorry, could not record video!');
+            ctx.replyWithVideo({ source: './videos/'+now+'.h264' })
         });
 })
 bot.action('delete', ({ deleteMessage }) => deleteMessage())

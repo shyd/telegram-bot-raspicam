@@ -10,9 +10,12 @@ const camera = new Raspistill({
 const Raspivid = require('node-raspivideo').Raspivid;
 const raspivid = new Raspivid({
     videoFolder: './videos',
-    /*verticalFlip: true,
-    horizontalFlip: true,*/
-    format: 'mp4'
+    width: 1280,
+    height: 720,
+    verticalFlip: true,
+    horizontalFlip: true,
+    format: 'mp4',
+    bitrate: 2000000
 });
 
 const keyboard = Markup.inlineKeyboard([

@@ -12,7 +12,7 @@ const raspivid = new Raspivid({
     videoFolder: './videos',
     verticalFlip: true,
     horizontalFlip: true,
-    format: 'h264'
+    format: 'mp4'
 });
 
 const keyboard = Markup.inlineKeyboard([

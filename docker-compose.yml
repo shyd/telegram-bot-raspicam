@@ -8,7 +8,8 @@ services:
       - ./photos:/usr/src/app/photos
       - ./videos:/usr/src/app/videos
     devices:
-      - "/dev/vchiq:/dev/vchiq"
+      - /dev/vcsm:/dev/vcsm
+      - /dev/vchiq:/dev/vchiq
     environment:
       - LD_LIBRARY_PATH=/opt/vc/lib
     env_file:

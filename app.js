@@ -10,8 +10,8 @@ const camera = new Raspistill({
 const Raspivid = require('node-raspivideo').Raspivid;
 const raspivid = new Raspivid({
     videoFolder: './videos',
-    verticalFlip: true,
-    horizontalFlip: true,
+    /*verticalFlip: true,
+    horizontalFlip: true,*/
     format: 'mp4'
 });
 
@@ -30,7 +30,7 @@ bot.command('pic', (ctx) => {
 })
 bot.command('vid', (ctx) => {
     const now = Math.floor(Date.now() / 1000);
-    raspivid.record(''+now, 10000)
+    raspivid.record(''+now, 15000)
         .then(() => {
             console.log('record done!');
             ctx.replyWithVideo({ source: './videos/'+now+'_converted.mp4' })

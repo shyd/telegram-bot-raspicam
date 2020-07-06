@@ -9,13 +9,14 @@ const camera = new Raspistill({
 });
 const Raspivid = require('node-raspivideo').Raspivid;
 const raspivid = new Raspivid({
-    videoFolder: './videos',
     width: 1280,
     height: 720,
-    verticalFlip: true,
-    horizontalFlip: true,
+    fps: 24,
+    bitrate: 2000000,
     format: 'mp4',
-    bitrate: 2000000
+    videoFolder: './videos',
+    verticalFlip: true,
+    horizontalFlip: true
 });
 
 const keyboard = Markup.inlineKeyboard([

@@ -20,7 +20,7 @@
   "homepage": "https://github.com/shyd/telegram-bot-raspicam#readme",
   "dependencies": {
     "node-raspistill": "^1.0.1",
-    "node-raspivideo": "^1.0.0",
+    "node-raspivideo": "shyd/node-raspivideo#master",
     "telegraf": "^3.38.0"
   }
 }

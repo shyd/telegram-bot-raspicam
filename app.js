@@ -33,7 +33,7 @@ bot.command('vid', (ctx) => {
     raspivid.record(''+now, 10000)
         .then(() => {
             console.log('record done!');
-            ctx.replyWithVideo({ source: './videos/'+now+'.mp4' })
+            ctx.replyWithVideo({ source: './videos/'+now+'_converted.mp4' })
         })
         .catch((err) => {
             console.error(err);
